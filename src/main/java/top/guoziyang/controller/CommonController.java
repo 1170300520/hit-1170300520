@@ -9,7 +9,7 @@ import top.guoziyang.pojo.User;
 import top.guoziyang.service.UserService;
 
 @Controller
-public class IndexController {
+public class CommonController {
 
   @Autowired
   private UserService userService;
