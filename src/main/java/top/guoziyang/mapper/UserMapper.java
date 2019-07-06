@@ -11,15 +11,15 @@ import java.util.List;
 public interface UserMapper {
 
   @Insert("INSERT INTO user(name, email, phone) VALUES(#{name}, #{email}, #{phone})")
-  void insertUser(User user);
+  void insert(User user);
 
   @Select("SELECT * FROM user")
   List<User> selectAll();
 
   @Delete("DELETE FROM user where id=#{id}")
-  void deleteUser(Integer id);
+  void delete(Integer id);
 
   @Update("UPDATE user SET name=#{name}, email=#{email}, phone=#{phone} WHERE id=#{id}")
-  void updateUser(User user);
+  void update(User user);
 
 }

@@ -14,7 +14,7 @@ public class UserService {
   private UserMapper mapper;
 
   public void insertUser(User user) {
-    mapper.insertUser(user);
+    mapper.insert(user);
   }
 
   public List<User> selectAll() {
@@ -22,11 +22,11 @@ public class UserService {
   }
 
   public void deleteUser(Integer id) {
-    mapper.deleteUser(id);
+    mapper.delete(id);
   }
 
   public void updateUser(User user) {
-    mapper.updateUser(user);
+    mapper.update(user);
   }
 
 }
